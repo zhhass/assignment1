@@ -1,0 +1,103 @@
+/* task4.css — Table + form styling */
+
+body {
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #2d2d2d;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+}
+
+/* ID selector for the heading above the table */
+#grades-heading {
+  color: #22313f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+th, td {
+  border: 1px solid #dde3e8;
+  padding: 10px 14px;
+  text-align: center;
+}
+
+thead th {
+  background-color: #22313f;
+  color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eef1f4;
+}
+
+/* Class selector to highlight a specific row */
+.highlight-row {
+  background-color: #fff3cd !important;
+  font-weight: bold;
+}
+
+/* --- Form --- */
+
+.feedback-form {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form label {
+  font-weight: bold;
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-label {
+  font-weight: normal !important;
+  margin-top: 0 !important;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  background-color: #22313f;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #3b5268;
+}

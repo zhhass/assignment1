@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 4 — Table & Form</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Task 1 — Personal Page</a></li>
+      <li><a href="task2.html">Task 2 — Div Layout</a></li>
+      <li><a href="task3.html">Task 3 — Tribute Page</a></li>
+      <li><a href="task4.html">Task 4 — Table & Form</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <h2 id="grades-heading">Student Grades</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Zhhass</td>
+          <td>Software Design Patterns</td>
+          <td>92</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>Zhhass</td>
+          <td>Web Development</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>Zhhass</td>
+          <td>Databases</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td colspan="2">Average Grade</td>
+          <td>92.7</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Feedback Form</h2>
+
+    <form class="feedback-form" id="feedback-form">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="role">Role</label>
+      <select id="role" name="role">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>Was this assignment helpful?</label>
+      <div class="radio-group">
+        <label class="radio-label"><input type="radio" name="helpful" value="yes"> Yes</label>
+        <label class="radio-label"><input type="radio" name="helpful" value="no"> No</label>
+      </div>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Any feedback?"></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+
+    </form>
+
+  </div>
+
+</body>
+</html>

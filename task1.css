@@ -1,0 +1,84 @@
+/* task1.css — Personal Page styling */
+
+body {
+  background-color: #f4f6f8;
+  color: #2d2d2d;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #22313f;
+}
+
+h2 {
+  color: #3b5268;
+  border-bottom: 2px solid #dde3e8;
+  padding-bottom: 6px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Element selector */
+ol, ul {
+  padding-left: 24px;
+  line-height: 1.7;
+}
+
+/* Class selector */
+.interests li {
+  margin-bottom: 4px;
+}
+
+.profile-img {
+  display: block;
+  max-width: 180px;
+  border-radius: 50%;
+  border: 4px solid #3b5268;
+  margin: 24px 0;
+}
+
+/* Element selector for links */
+a {
+  color: #3b5268;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-color: #3b5268;
+}
+
+/* ID selector */
+#profile-card {
+  background-color: #ffffff;
+  border: 1px solid #dde3e8;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.profile-card .group {
+  color: #6b7c8c;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.profile-card .bio {
+  font-size: 0.95rem;
+}
